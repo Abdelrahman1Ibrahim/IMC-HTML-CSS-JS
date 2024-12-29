@@ -49,7 +49,7 @@ submit.addEventListener("click", function (e) {
       // login.style.display = "none";
       // tologout.style.display = "block";
       setTimeout(() => {
-        window.location = "./home.html";
+        window.location = "./index.html";
       }, 1000);
     } else {
       errorData.style.display = "block";
