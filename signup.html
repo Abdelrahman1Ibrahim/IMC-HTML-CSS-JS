@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&family=Roboto:wght@400;500;700;900&family=Sacramento&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Sign Up|System</title>
+    </head>
+    <body class="flex">
+        <div class="parent">
+            <h1>
+                Smart SignUp System
+            </h1>
+            <form action="">
+                <input type="text" id="UserName" placeholder="Enter your username" />
+                <div class="check" style="display: none;">
+                    <ul>
+                        <li><i class="fa-solid fa-check tmam " style="display: none;"></i> <i class="fa-regular fa-circle-xmark wrong" ></i> 5-30 charcters</li>
+                        <li><i class="fa-solid fa-check tmam" style="display: none;"></i> <i class="fa-regular fa-circle-xmark wrong"></i> start with uppercase letter</li>        
+                    </ul>
+                </div>
+                <input type="text" id="Email" placeholder="Enter your email" />
+
+                <div class="EmailInvalid" style="display: none;">
+                    Invalid email address!
+                </div>
+                <input type="password" name="password" placeholder="Password" id="password" />
+                <div class="passwordCheck" style="display: none;">
+                    <ul>
+                        <li><i class="fa-solid fa-check pass " style="display: none;"></i> <i class="fa-regular fa-circle-xmark wpass" ></i> at least 8-50 charcters</li>
+                        <li><i class="fa-solid fa-check pass" style="display: none;"></i> <i class="fa-regular fa-circle-xmark wpass"></i> at least one uppercase letter</li>        
+                        <li><i class="fa-solid fa-check pass" style="display: none;"></i> <i class="fa-regular fa-circle-xmark wpass"></i> at least one lowercase letter</li>        
+                        <li><i class="fa-solid fa-check pass" style="display: none;"></i> <i class="fa-regular fa-circle-xmark wpass"></i> at least one number</li>        
+                    </ul>
+                </div>
+                <input type="password" name="password" id="repassword" placeholder="Confirme Password" />
+                <input type="submit" id="SignUp" value="Sign Up" />
+                
+                <p>
+                    Have an account?
+                    <a href="login.html">login</a>
+                </p>
+            </form>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
