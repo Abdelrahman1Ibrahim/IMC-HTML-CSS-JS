@@ -124,7 +124,6 @@ nav i {
   max-width: 100%;
   height: calc(100vh - 95px);
   /* background-color: red; */
-  overflow: hidden;
 }
 .heading img {
   width: 100%;
@@ -132,6 +131,7 @@ nav i {
   position: relative;
   z-index: -2;
 }
+
 .heading .imc {
   position: absolute;
   left: 0;
@@ -140,21 +140,26 @@ nav i {
   color: rgb(19, 85, 139);
   padding: 20px 30px 20px 60px;
 }
-@media (max-width: 425px) {
-  .heading .imc {
-    width: 100%;
-    padding: 20px;
-  }
-}
+
 .heading .imc span {
   display: block;
   font-size: 100px;
   font-weight: bold;
   letter-spacing: 15px;
 }
+
+@media (max-width: 600px) {
+  .heading .imc {
+    max-width: 65%;
+    padding: 20px;
+  }
+  .imc span {
+    font-size: 66px !important ;
+  }
+}
 @media (max-width: 320px) {
   .heading .imc span {
-    font-size: 70px;
+  font-size: 55px !important;
   }
 }
 .heading .imc p {
